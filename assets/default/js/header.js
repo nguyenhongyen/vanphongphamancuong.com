@@ -66,7 +66,6 @@ let handleCallMenu = function () {
 				$body.removeClass('is-overflow');
 			}
 
-			$('#header-navigation ul').collapse('hide');
 		} else {
 			if ($toggle) {
 				$body.addClass('is-navigation is-overflow')
@@ -99,46 +98,12 @@ let handleCallMenu = function () {
 		const callSearch = $('#callSearch');
 		if (callSearch.length) {
 			callSearch.click(function () {
-				$body.addClass('is-search')
+				$body.toggleClass('is-search')
 			});
 		}
 	} else {
 		handleBody();
 	}
-
-	const elmToggle = $('#js-toggle_search');
-	elmToggle.click(function () {
-		$body.removeClass('is-navigation is-overflow')
-	});
-
-	$(document).mouseup(function (e) {
-		let elm = elmToggle.parent();
-		elm.is(e.target) || 0 !== elm.has(e.target).length || (elm.removeClass('is-show'), elm.children('#js-toggle_search').html('<i class="fal fa-search"></i>'))
-	});
-
-	const navChild = $('.header-navigation li');
-	if (navChild.length) {
-		navChild.each(function () {
-			let elm = $(this);
-			let checkNavChild = $(this).find('.header-navigation__child');
-			let navChildItem = $(this).find('a');
-			if (checkNavChild.length) {
-				navChildItem.click(function () {
-					elm.addClass('show-navChild');
-					$('body').css({
-						overflow: "hidden"
-					})
-					return false;
-				})
-
-			}
-			$('body').css({
-				overflow: "unset"
-			})
-
-		})
-	}
-
 }
 
 $(function () {
