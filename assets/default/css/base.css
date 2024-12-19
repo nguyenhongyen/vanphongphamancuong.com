@@ -1,6 +1,6 @@
 :root {
 	--transition-default: 0.3s all ease-in-out;
-	--font-theme: 'Inter', Arial, Helvetica, sans-serif;
+	--font-theme: 'Roboto', sans-serif;
 	--size-theme: 14px;
 	--bs-gray-1000: #000000;
 	--price-color: #d0021c;
@@ -9,11 +9,12 @@
 	--primary-hover: #d6363a;
 	--primary-rgb: 8, 103, 173;
 
-	--secondary-color: #ED3439;
-	--secondary-hover: #c62a2e;
+	--secondary-color: #8e0009;
+	--secondary-hover: #720009;
 	--secondary-rgb: 237, 52, 57;
 
 	--bs-white:#ffff;
+
 
 }
 
