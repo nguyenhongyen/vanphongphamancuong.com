@@ -2135,8 +2135,11 @@ header .top a {
 }
 
 .footer-information ul > li {
-    font-size: 0.9em;
+    font-size: 0.95em;
     line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
 }
 
 .footer-social__item {
