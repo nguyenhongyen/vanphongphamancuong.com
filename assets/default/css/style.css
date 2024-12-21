@@ -433,7 +433,7 @@ header .top a {
 }
 
 .header .header-inner .header-logo a img {
-    max-height: 110px;
+    max-height: 90px;
 }
 
 .header .header-inner {
@@ -459,7 +459,7 @@ header .top a {
 }
 
 .header .search-control .search-control_input {
-    width: 500px;
+    width: 450px;
     height: 44px;
     border-radius: 0;
     padding-left: 15px;
@@ -486,7 +486,8 @@ header .top a {
 
 .header-contact__icon {
     width: 20px;
-    height: 20px
+    height: 20px;
+    display:flex;
 }
 
 .header .header-inner .header-action {
@@ -789,7 +790,15 @@ header .top a {
     opacity: 0.8;
     color: var(--bs-white) !important;
 }
-
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .header .search-control .search-control_input {
+        width: 400px;
+    }
+    .header-contact__icon{
+        width: 15px;
+        height: 15px;
+    }
+}
 @media screen and (min-width: 1200px) {
     .header .header-navigation .header-navigation_list > li > a:hover {
         background-color: #c60505;
